@@ -96,7 +96,7 @@ writetable(model_performance_table, fullfile(files(1).folder, 'model_performance
 data_str3 = 'data/test_data.csv'; % Path to new test data
 test_data = readtable(data_str3, 'VariableNamingRule', 'preserve');
 test_data(:,1) = []; % Remove timestamp column
-y_test = test_data(:, [10, 11, 12, 13]); % Extract actual values
+y_test = test_data(:, end-1:end); % Extract actual values
 
 % Normalize test data
 test_data_norm = test_data(:, model_output.feature_need_last);
