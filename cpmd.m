@@ -1,16 +1,6 @@
 %% Algorithm Comparison Plot
-% This script compares the performance of multiple regression and time series prediction algorithms.
-% The data consists of predicted and actual values from various models (exported directly from the toolbox).
-% The key modification is to ensure the loaded models and their corresponding `str` names are aligned.
-% The script needs to be run in the directory where the model files are located.
 
-% Models:
-% GRU: '25_Jan_10_46_14 train_result_train_vaild_test.mat'
-% LSTM: '25_Jan_10_55_33 train_result_train_vaild_test.mat'
-% BiLSTM: '25_Jan_11_05_22 train_result_train_vaild_test.mat'
-% CNN: '25_Jan_11_09_15 train_result_train_vaild_test.mat'
-% CNN-BiLSTM: '25_Jan_11_13_27 train_result_train_vaild_test.mat'
-% Bayesian Optimized CNN-BiLSTM: '25_Jan_12_13_03 train_result_train_vaild_test.mat'
+% Models
 
 %% Step-by-Step Execution: Load models, plot predictions, and compare errors
 
@@ -20,7 +10,7 @@ close all;
 
 % Initialize variables
 data_pre_all = [];  % Store predicted data
-selectnumber = 3;  % Select which column of predictions to use
+selectnumber = 2;  % Select which column of predictions to use
 
 % Load model results and aggregate predicted data
 % Correspond the loaded models with their respective names in `str`
