@@ -21,7 +21,7 @@ Model Output Comparison: The output from the original model is analyzed and comp
 The project implements a model self-updating mechanism using Increment learning. A new local historical dataset is utilized to fine-tune the existing large-scale model, allowing the model to adapt over time.
 
 Increment Learning Script: `finetunemd.m` (For model fine-tuning)
-New vs Old Model Comparison: 'cpmd.m' (Compare predictions from new and old models on both new and old test datasets).
+New vs Old Model Comparison: `cpmd.m`(Compare predictions from new and old models on both new and old test datasets).
 Execution: Use the `main` function to run `train_model.m` and `finetunemd.m` for the required steps.
 
  5. Monitoring and Evaluation
