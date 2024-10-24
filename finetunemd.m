@@ -9,7 +9,7 @@ df = df(:, 2:end);
 newData = df(1:end, :);
 newRows = height(df);
 X_new = newData(:, selectfeature);
-y_new = newData(:, end-3:end);
+y_new = newData(:, end-1:end);
 
 % Standardization
 X_new = (X_new - x_mean) ./ x_sig;
@@ -25,7 +25,7 @@ df = readtable(datastr, opts);
 df = df(:, 2:end);
 allData = df(1:end, :);
 X = allData(:, selectfeature);
-y = allData(:, end-3:end);
+y = allData(:, end-1:end);
 X = (X - x_mean) ./ x_sig;
 y = (y - y_mean) ./ y_sig;
 
